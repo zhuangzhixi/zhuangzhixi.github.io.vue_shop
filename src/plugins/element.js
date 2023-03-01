@@ -22,7 +22,11 @@ import {
     Tag,
     Tree,
     Select,
-    Option
+    Option,
+    Cascader,
+    Alert,
+    Tabs,
+    TabPane
 } from 'element-ui'
 
 Vue.use(Button)
@@ -51,6 +55,11 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Option)
+Vue.use(Cascader)
+Vue.use(Alert)
+Vue.use(Tabs)
+Vue.use(TabPane)
 //与上面的不同，上面的是通过el-container这样的标签名进行调用的
 //message要进行全局挂载$message是一个自定义属性，名字不作要求。这样所以组件都可以通过this来访问message
 Vue.prototype.$message = Message
