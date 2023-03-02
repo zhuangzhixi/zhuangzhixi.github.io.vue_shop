@@ -26,8 +26,16 @@ import {
     Cascader,
     Alert,
     Tabs,
-    TabPane
+    TabPane,
+    Steps,
+    Step,
+    CheckboxGroup,
+    Checkbox,
+    Upload
 } from 'element-ui'
+
+import Timeline from './timeline/index.js'
+import TimelineItem from './timeline-item/index.js'
 
 Vue.use(Button)
 Vue.use(Form)
@@ -60,6 +68,13 @@ Vue.use(Cascader)
 Vue.use(Alert)
 Vue.use(Tabs)
 Vue.use(TabPane)
+Vue.use(Steps)
+Vue.use(Step)
+Vue.use(CheckboxGroup)
+Vue.use(Checkbox)
+Vue.use(Upload)
+Vue.use(Timeline)
+Vue.use(TimelineItem)
 //与上面的不同，上面的是通过el-container这样的标签名进行调用的
 //message要进行全局挂载$message是一个自定义属性，名字不作要求。这样所以组件都可以通过this来访问message
 Vue.prototype.$message = Message
